@@ -1,0 +1,201 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "ignorePatterns": [
+    "*.spec.ts"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "off"
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "off"
+    ],
+    "@typescript-eslint/no-empty-function": [
+      "off"
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "off"
+    ],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prefer-const": "error",
+    "no-var": "error",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "arrow-parens": "off",
+    "no-multiple-empty-lines": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-empty-interface": [
+      "off"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never",
+      {
+        "objectsInArrays": false
+      }
+    ],
+    "arrow-spacing": "error",
+    "block-spacing": "error",
+    "brace-style": "off",
+    "consistent-return": "error",
+    "curly": [
+      "error",
+      "all"
+    ],
+    "default-param-last": "error",
+    "eol-last": "error",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "lines-between-class-members": "error",
+    "max-classes-per-file": [
+      "error",
+      3
+    ],
+    "newline-after-var": "error",
+    "newline-before-return": "error",
+    "no-alert": "error",
+    "no-else-return": [
+      "error",
+      {
+        "allowElseIf": false
+      }
+    ],
+    "no-eval": "error",
+    "no-lone-blocks": "error",
+    "no-return-assign": "error",
+    "no-return-await": "error",
+    "no-trailing-spaces": "error",
+    "no-unused-expressions": [
+      "off"
+    ],
+    "no-unused-vars": [
+      "off"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "objectsInObjects": false
+      }
+    ],
+    "quotes": [
+      "off"
+    ],
+    "space-before-blocks": "error",
+    "space-before-function-paren": "off",
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "@typescript-eslint/brace-style": [
+      "error",
+      "stroustrup",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "@typescript-eslint/camelcase": [
+      "off"
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "comma",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "comma",
+          "requireLast": true
+        }
+      }
+    ],
+    "@typescript-eslint/no-this-alias": [
+      "error"
+    ],
+    "@typescript-eslint/no-throw-literal": [
+      "error"
+    ],
+    "@typescript-eslint/no-unused-expressions": [
+      "error"
+    ],
+    "@typescript-eslint/no-useless-constructor": [
+      "error"
+    ],
+    "@typescript-eslint/promise-function-async": [
+      "error"
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single"
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "never"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ]
+  }
+}
