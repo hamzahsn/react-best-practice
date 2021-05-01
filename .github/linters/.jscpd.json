@@ -1,0 +1,6 @@
+{
+  "threshold": 0,
+  "reporters": ["html", "console", "badge"],
+  "ignore": ["**/*.svg/**", "**/node_modules/**", "**/__snapshots__/**"],
+  "absolute": true
+}
